@@ -1,5 +1,5 @@
 
-function Grid(){
+export default function Grid(){
     return(
 
         <h1>Grid</h1>
@@ -8,4 +8,3 @@ function Grid(){
 
 }
 
-export default Grid;

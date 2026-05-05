@@ -1,5 +1,5 @@
 
-function ColorPicker(){
+export default function ColorPicker(){
     return(
         <h1>ColorPicker</h1>
     )
@@ -8,4 +8,3 @@ function ColorPicker(){
 
 }
 
-export default ColorPicker;

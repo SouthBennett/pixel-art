@@ -1,16 +1,12 @@
-
 import './App.css'
-import Grid from './components/Grid'
-import ColorPicker from './components/ColorPicker'
+import Header from "./components/Header"
 
 function App() {
 
 
   return (
     <>
-    <Grid />
-    <ColorPicker />
-      
+      <Header />
     </>
   )
 }
