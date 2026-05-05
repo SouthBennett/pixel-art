@@ -1,0 +1,7 @@
+.colorPicker-container{
+    border-width: 1rem;
+    border-style: double;
+    height: 500px;
+    width: 400px;
+    margin: 2rem;
+}

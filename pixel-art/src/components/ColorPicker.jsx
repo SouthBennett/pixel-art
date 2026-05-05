@@ -1,7 +1,12 @@
+import './ColorPicker.css'
 
 export default function ColorPicker(){
     return(
-        <h1>ColorPicker</h1>
+        <section className="colorPicker-container">
+            <div>
+                <h1>colorpicker</h1>
+            </div>
+        </section>
     )
 
 

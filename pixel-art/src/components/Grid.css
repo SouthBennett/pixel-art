@@ -1,0 +1,7 @@
+.grid-container{
+    border-width: 1rem;
+    border-style: double;
+    height: 1000px;
+    width: 1000px;
+    margin: 2rem;
+}

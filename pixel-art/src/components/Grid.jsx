@@ -1,8 +1,13 @@
+import './Grid.css'
 
 export default function Grid(){
     return(
+        <section className="grid-container">
+            <div>
+                <h1>grid</h1>
 
-        <h1>Grid</h1>
+            </div>
+        </section>
     )
 
 
