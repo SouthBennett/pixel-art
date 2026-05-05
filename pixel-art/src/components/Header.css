@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nav-link {
+  margin-left: 15px;
+}
