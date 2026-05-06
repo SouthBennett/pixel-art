@@ -9,10 +9,17 @@ function App() {
   return (
     <>
     <main>
-      <Header />
-      <ColorPicker />
-      <Grid />
-      
+      <Header /> 
+      <section className='home-page'>
+        <h1>Pixel Art Editor</h1>
+
+        <div className='home-layout'>
+          <ColorPicker /> 
+          <Grid />
+        </div>
+
+      </section>
+
     </main>
     </>
   )

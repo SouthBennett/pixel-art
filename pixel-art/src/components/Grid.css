@@ -1,7 +1,15 @@
 .grid-container{
-    border-width: 1rem;
-    border-style: double;
-    height: 1000px;
-    width: 1000px;
-    margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(16, 32px);
+  grid-template-rows: repeat(16, 32px);
+
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+}
+.cell {
+  width: 32px;
+  height: 32px;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }

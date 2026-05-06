@@ -1,10 +1,33 @@
 import './ColorPicker.css'
 
 export default function ColorPicker(){
+    const colorCells = [];
+
+    for(let i = 0; i< 10;i++){
+        colorCells.push(
+            <div className='color-cell'></div>
+        )
+    }
+
     return(
-        <section className="colorPicker-container">
-            <div>
-                <h1>colorpicker</h1>
+        <section >
+            <div className="colorPicker-container">
+                    <h1>COLOR</h1>
+                
+                <div className='preview-color'>
+                    preview  color
+                </div>
+
+                <div className='color-picker-grid'>
+                    {colorCells}
+                </div>
+                <div>
+                    <button className='clear-btn'>Clear</button>
+                </div>
+                <div className='color-msg'>
+                    Click any cell to paint it with 
+                    the current color
+                </div>
             </div>
         </section>
     )
