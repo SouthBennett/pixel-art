@@ -4,12 +4,15 @@
   grid-template-rows: repeat(16, 32px);
 
   background: white;
-  border: 1px solid #ddd;
+  border: .2px solid #ddd;
   border-radius: 1rem;
 }
 .cell {
   width: 32px;
   height: 32px;
-  border-right: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid black;
+  /* background-color:white; */
+}
+.cell:hover{
+  background-color: gray;
 }
