@@ -18,6 +18,8 @@ export default function ColorPicker({ currentColor, setCurrentColor }){
                     preview  color
                 </div>
 
+                <input type="color" value={currentColor} />
+
                 <div className='color-picker-grid'>
                     {colorCells}
                 </div>
