@@ -7,11 +7,11 @@ export default function Header() {
   return (
     <header className="header" id="header">
       <nav>
-        <a href="" className="nav-link">Home</a>
-        <a href="" className="nav-link">Pixel Art</a>
-        <a href="" className="nav-link">Pixel Art+</a>
-        <a href="" className="nav-link">Tier List</a>
-        <a href="" className="nav-link">Trading Card</a>
+        <a onClick={() => setActiveTab("Home")} href="" className={activeTab === "Home" ? "active" : "nav-link"}>Home</a>
+        <a onClick={() => setActiveTab("Pixel Art")} href="" className={activeTab === "Pixel Art" ? "active" : "nav-link"}>Pixel Art</a>
+        <a onClick={() => setActiveTab("Pixel Art+")} href="" className={activeTab === "Pixel Art+" ? "active" : "nav-link"}>Pixel Art+</a>
+        <a onClick={() => setActiveTab("Tier List")} href="" className={activeTab === "Tier List" ? "active" : "nav-link"}>Tier List</a>
+        <a onClick={() => setActiveTab("Trading Card")} href="" className={activeTab === "Trading Card" ? "active" : "nav-link"}>Trading Card</a>
       </nav>
     </header>
   );
