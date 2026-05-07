@@ -15,7 +15,10 @@ function App() {
         <h1>Pixel Art Editor</h1>
 
         <div className='home-layout'>
-          <ColorPicker /> 
+          <ColorPicker 
+            currentColor={currentColor}
+            setCurrentColor={setCurrentColor}
+          /> 
           <Grid />
         </div>
 

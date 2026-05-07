@@ -1,6 +1,6 @@
 import './ColorPicker.css'
 
-export default function ColorPicker(){
+export default function ColorPicker({ currentColor, setCurrentColor }){
     const colorCells = [];
 
     for(let i = 0; i< 10;i++){
