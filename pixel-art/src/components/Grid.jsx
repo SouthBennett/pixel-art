@@ -1,14 +1,11 @@
 import './Grid.css'
-import { useState } from 'react'
 
 
-export default function Grid({ currentColor }){
+export default function Grid({ currentColor, pixels, setPixels}){
     const rows = Array.from({length: 16})
     const cols = Array.from({length: 16})
 
-    const [ pixels, setPixels ] = useState(
-        Array(256).fill("#ffffff")
-    )
+
 
     function paintPixel(index){
         const updatedPixels = [...pixels]
