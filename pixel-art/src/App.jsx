@@ -19,7 +19,9 @@ function App() {
             currentColor={currentColor}
             setCurrentColor={setCurrentColor}
           /> 
-          <Grid />
+          <Grid 
+            currentColor={currentColor}
+          />
         </div>
 
       </section>

@@ -2,7 +2,7 @@ import './Grid.css'
 import { useState } from 'react'
 
 
-export default function Grid(){
+export default function Grid({ currentColor }){
     const rows = Array.from({length: 16})
     const cols = Array.from({length: 16})
 
@@ -12,7 +12,7 @@ export default function Grid(){
 
     function paintPixel(index){
         const updatedPixels = [...pixels]
-        updatedPixels[index] = "black"
+        updatedPixels[index] = currentColor
         setPixels(updatedPixels)
     }
    
