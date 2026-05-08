@@ -5,7 +5,7 @@ import Grid from './components/Grid'
 import ColorPicker from './components/ColorPicker'
 
 function App() {
-  const [currentColor, setCurrentColor] = useState();
+  const [currentColor, setCurrentColor] = useState("#0BD465");
 
   return (
     <>
