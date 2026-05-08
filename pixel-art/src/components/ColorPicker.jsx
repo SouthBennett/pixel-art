@@ -1,13 +1,18 @@
 import './ColorPicker.css'
 
 export default function ColorPicker({ currentColor, setCurrentColor }){
-    const colorCells = [];
+    // const colorCells = [];
 
-    for(let i = 0; i< 10;i++){
-        colorCells.push(
-            <div className='color-cell'></div>
-        )
-    }
+    const presetColors = [
+        "#000000", "#FFFFFF", "#FF0000", "#FFAA00", "#FFDA8A",
+        "#8AFFC4", "#1B8AB5", "#541082", "#FF407D", "#FF8C75"
+    ];
+
+    // for(let i = 0; i< 10;i++){
+    //     colorCells.push(
+    //         <div className='color-cell'></div>
+    //     )
+    // }
 
     return(
         <section >
@@ -18,10 +23,18 @@ export default function ColorPicker({ currentColor, setCurrentColor }){
                     preview  color
                 </div>
 
-                <input type="color" value={currentColor} />
+                <input type="color" onChange={(event) => setCurrentColor(event.target.value)} value={currentColor} />
 
                 <div className='color-picker-grid'>
-                    {colorCells}
+                    {presetColors.map((color) => {
+                        return (
+                            <div
+                                className='color-cell'
+                                key={color}
+                                style={{ backgroundColor: color}}
+                            ></div>
+                        )
+                    })}
                 </div>
                 <div>
                     <button className='clear-btn'>Clear</button>
