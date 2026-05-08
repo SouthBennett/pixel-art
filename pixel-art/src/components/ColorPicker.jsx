@@ -18,12 +18,15 @@ export default function ColorPicker({ currentColor, setCurrentColor }){
         <section >
             <div className="colorPicker-container">
                     <h1>COLOR</h1>
-                
-                <div className='preview-color'>
-                    preview  color
-                </div>
 
-                <input type="color" onChange={(event) => setCurrentColor(event.target.value)} value={currentColor} />
+                <div className='preview-color'>
+                    <input 
+                        type="color" 
+                        onChange={(event) => setCurrentColor(event.target.value)} 
+                        value={currentColor}
+                        className = "preview-bar" 
+                    />
+                </div>
 
                 <div className='color-picker-grid'>
                     {presetColors.map((color) => {
