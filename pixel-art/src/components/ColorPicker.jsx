@@ -32,6 +32,7 @@ export default function ColorPicker({ currentColor, setCurrentColor }){
                                 className='color-cell'
                                 key={color}
                                 style={{ backgroundColor: color}}
+                                onClick={() => setCurrentColor(color)}
                             ></div>
                         )
                     })}
