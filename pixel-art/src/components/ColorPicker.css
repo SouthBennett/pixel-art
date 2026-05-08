@@ -28,7 +28,10 @@
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   border-radius: 0.5rem;
-
+}
+.styled-cell {
+  border: 2px solid black;
+  border-radius: 0.5rem;
 }
 .color-picker-grid{
   display: grid;

@@ -32,7 +32,7 @@ export default function ColorPicker({ currentColor, setCurrentColor }){
                     {presetColors.map((color) => {
                         return (
                             <div
-                                className='color-cell'
+                                className={currentColor === color ? 'styled-cell' : 'color-cell'}
                                 key={color}
                                 style={{ backgroundColor: color}}
                                 onClick={() => setCurrentColor(color)}
